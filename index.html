@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Now</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar-container">
+        <nav>
+            <h1 class="title-page"><i class="bi bi-car-front-fill"></i>Rent Now</h1>
+        </nav>
+    </div>
+
+    <main>
+
+        <section class="apresentation">
+            <h2>Alugue um carro e maneira fácil e acessível!</h2>
+            <p>Sem burocracia ou pegadinhas!</p>
+        </section>
+
+        <section class="rent-container">
+
+            <h2>Opções disponíveis:</h2>
+            
+            <div class="car"> 
+                <ul>
+                    <li class="car-image"> <img src="img/economicos/kwid.png" alt="kwid" class="car-image"></li>
+                    <li class="car-name"> Kwid</li>
+                    <li class="car-price">R$ 100,00 p/dia</li>
+                    <li><input type="submit" class="car-btn" id="car-rentBtn" value="Alugar">
+                    </li>
+                    <li><button class="car-btn"  onclick="details('kwid')">Detalhes</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car"> 
+                <ul>
+                    <li class="car-image"> <img src="img/economicos/mobi.webp" alt="mobi" class="car-image"> </li>
+                    <li class="car-name"> Mobi</li>
+                    <li class="car-price"> R$ 100,00 p/dia</li>
+                    <li><input type="submit" class="car-btn" id="car-rentBtn" value="Alugar">
+                    </li>
+                    <li><button class="car-btn"  onclick="details('mobi')">Detalhes</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="car"> 
+                <ul>
+                    <li class="car-image"><img src="img/economicos/march2.jpg" alt="march" class="car-image"> </li>
+                    <li class="car-name"> March</li>
+                    <li class="car-price">R$ 100,00 p/dia</li>
+                    <li><input type="submit" class="car-btn" id="car-rentBtn" value="Alugar">
+                    </li>
+                    <li><button class="car-btn"  onclick="details('march')" >Detalhes</button>
+                    </li>
+                </ul>
+            </div>    
+
+                <div class="car"> 
+                    <ul>
+                        <li class="car-image"> <img src="img/hatchs/gol.webp" alt="gol" class="car-image"></li>
+                        <li class="car-name"> Gol</li>
+                        <li class="car-price">R$ 200,00 p/dia</li>
+                        <li><input type="submit" class="car-btn" id="car-rentBtn" value="Alugar">
+                        </li>
+                        <li><button class="car-btn" onclick="details('gol')" >Detalhes</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="car"> 
+                    <ul>
+                        <li class="car-image"> <img src="img/hatchs/hb20.webp" alt="hb20" class="car-image"> </li>
+                        <li class="car-name"> HB20</li>
+                        <li class="car-price"> R$ 200,00 p/dia</li>
+                        <li><input type="submit" class="car-btn" id="car-rentBtn" value="Alugar">
+                        </li>
+                        <li><button class="car-btn"  onclick="details('hb20')" >Detalhes</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="car"> 
+                    <ul>
+                        <li class="car-image"><img src="img/hatchs/onix.jfif" alt="onix" class="car-image"> </li>
+                        <li class="car-name"> Onix</li>
+                        <li class="car-price">R$ 200,00 p/dia</li>
+                        <li><input type="submit" class="car-btn" id="car-rentBtn" value="Alugar">
+                        </li>
+                        <li><button class="car-btn" onclick="details('onix')">Detalhes</button>
+                        </li>
+                    </ul>
+                </div> 
+                
+                <!--Quando o usuário clicar em "Detalhes" esse container será exibido, mas até então, ele será escondido por padrão-->
+                
+                <div class="details-container" id="detailsContainerId">
+
+                </div>
+
+        </section>
+
+        <section class="reasons-container">
+
+            <h2>Por que Alugar Conosco?</h2>
+
+            <div class="reason-box"> 
+                <ul class="reason">
+                    <li class="icon-reason"><i class="bi bi-emoji-laughing-fill"></i></li>
+                    <li class="reason-name">Sem Burocracia</li>
+                    <li class="reason-description"> Alugue um carro de forma rápida e sem complicações. Simplificamos tudo para você.</li>
+                </ul>
+            </div>
+
+            <div class="reason-box"> 
+                <ul class="reason">
+                    <li class="icon-reason"> <i class="bi bi-currency-dollar"></i></li>
+                    <li class="reason-name">Preços Justos </li>
+                    <li class="reason-description">Oferecemos tarifas competitivas, sem taxas ocultas. O que você vê é o que você paga.</li>
+                </ul>
+            </div>
+
+            <div class="reason-box"> 
+                <ul class="reason">
+                    <li class="icon-reason"><i class="bi bi-headset"></i></i></li>
+                    <li class="reason-name">Suporte ao Cliente</li>
+                    <li class="reason-description"> Nossa equipe está sempre disponível para garantir uma experiência de aluguel tranquila e satisfatória.</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>Desenvolvido por Vinícius Castro</footer>
+
+</body>
+
+</html>
